@@ -4,15 +4,109 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Sample</title>
+    <title>Katsumi’s Portfolio</title>
+    <meta name="description" content="「htmlって何？」という超初心者が
+    プログラミングを学びはじめてから10日で作成したポートフォリオを紹介するページ">
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
     <!-- jQuery読み込み -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header>
+      <nav>
+        <h1><a href="#">Katsumi’s Portfolio</a></h1>
+        <ul>
+          <li><a href="index.html" class="selected">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Works</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="logo">
+        <h1><strong>You’ll never find a rainbow 
+        <br>
+        <br>
+        if you’re looking down.</strong></h1>
+      </div>
+    </header>
+    <div class="container">
+      <section>
+        
+<!-- プロフィール紹介 -->
+
+        <h2><strong>Profile</strong></h2>
+        <img src="./img/profile.jpg" alt="プロフィール写真">
+        <h3><strong>Katsumi</strong></h3>
+        <br>
+        <p><strong>斎藤　克実（人形町で働く会社員 ）</strong></p>
+         <p>埼玉県在住。東京の人形町にある会社で働いてます。</p>
+         <p>好きなものは <strong>「沖縄」・「マラソン」・「酒」</strong></p>
+         <p>実は、<strong><span class="red">「htmlって何？」</span></strong> というくらいアナログ人間です。</p>
+         <p>今更ながら、プログラミングを学び始めました。</p>
+         <p>私のポートフォリオを見て気になった方は、<strong><a href="#">Contact</a></strong>よりご連絡お願い致します。</p>
+
+<!-- ポートフォリオ紹介 -->
+
+        <div class="portfolio">
+          
+        <h2><strong>Works</strong></h2>
+        
+        <ul>
+          <li>
+             <a href="#" target="_blank">
+             メッセージボード
+             <img src="./img/pot1.png" alt="メッセージボード">
+             </a>
+             メッセージのやりとりが出来る掲示板アプリ
+          </li>
+          <li>
+             <a href="#" target="_blank">
+             Twitterクローン
+             <img src="./img/pot2.png" alt="Twitterクローン">
+             </a>
+             Twitterと同じ機能を持たせたクローンサイト
+          </li>
+          <li>
+             <a href="#" target="_blank">
+             モノリスト
+             <img src="./img/pot3.png" alt="モノリスト">
+             </a>
+             楽天APIを活用したアイテムシェアサービス
+          </li>
+            <li>
+             <a href="#" target="_blank">
+             オリジナルサービス
+             <img src="./img/pot4.png" alt="オリジナルサービス">
+             </a>
+             オリジナルWebサービス
+          </li>
+        </ul>
+        
+         <div class=git>
+           <h3>👇　GitHubページはこちら　👇</h3>
+           <a href="https://github.com/" target="_blank">
+           <img src="./img/GitHub-Logo.png" alt="GitHubロゴ">
+           <img src="./img/Octocat.png" alt="Octocatロゴ">
+           </a>
+         </div>
+           
+        </div>
+        <br>
+        <br>
+        <h3>リンク</h3>
+        <ul>
+          <li><a href="https://github.com/sherry0905" target="_blank">Github</a></li>
+          <li><a href="#" target="_blank">Facebook</a></li>
+          <li><a href="#" target="_blank">Twitter</a></li>
+        </ul>
+      </section>
+      <footer>
+        <p><strong>&copy; 2016 Katsumi.</strong></p>
+      </footer>
+    </div>
   </body>
 </html>
