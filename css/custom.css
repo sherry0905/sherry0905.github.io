@@ -26,7 +26,7 @@ header {
   text-align: center;
 }
 
-#logo h1 {
+#logo h2 {
   letter-spacing: 0.15em;
   color: #fff;
   text-shadow: 3px 3px 0px #000;
@@ -78,7 +78,12 @@ nav ul li a.selected {
 section {
   padding: 30px 20px;
 }
-section>img{
+
+#profile p{
+  text-align: center;
+}
+
+#profile>img{
   display: block;
   margin: auto;
   max-width: 360px;
@@ -101,12 +106,31 @@ section ul{
 section ul li  {
   display: inline-block;
   text-align: center;
-  padding: 15px 20px;
+  padding: 15px 25px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
 }
 
+#caption img {
+  height: 200px;
+}
+
+#caption figure {
+  text-align: center;
+  background: #eee;
+}
+
+#caption figcaption {
+  background: #fff;
+  padding-top: 1em;
+}
+
+#caption h3{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 30px auto
+}
 .portfolio{
   color: blue
 }

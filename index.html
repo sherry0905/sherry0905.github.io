@@ -15,7 +15,7 @@
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
-  <body>
+  <body id="index">
     <header>
       <nav>
         <h1><a href="#">Katsumi’s Portfolio</a></h1>
@@ -27,86 +27,68 @@
         </ul>
       </nav>
       <div id="logo">
-        <h1><strong>You’ll never find a rainbow 
+        <h2><strong>You’ll never find a rainbow 
         <br>
         <br>
-        if you’re looking down.</strong></h1>
+        if you’re looking down.</strong></h2>
       </div>
     </header>
     <div class="container">
       <section>
         
 <!-- プロフィール紹介 -->
-
+      <div id="profile">
         <h2><strong>Profile</strong></h2>
         <img src="./img/profile.jpg" alt="プロフィール写真">
         <h3><strong>Katsumi</strong></h3>
         <br>
         <p><strong>斎藤　克実（人形町で働く会社員 ）</strong></p>
+        <br>
          <p>埼玉県在住。東京の人形町にある会社で働いてます。</p>
          <p>好きなものは <strong>「沖縄」・「マラソン」・「酒」</strong></p>
          <p>実は、<strong><span class="red">「htmlって何？」</span></strong> というくらいアナログ人間です。</p>
          <p>今更ながら、プログラミングを学び始めました。</p>
-         <p>私のポートフォリオを見て気になった方は、<strong><a href="#">Contact</a></strong>よりご連絡お願い致します。</p>
-
+         <p>私のポートフォリオを見て気になった方は<strong><a href="#">Contact</a></strong>よりご連絡お願いします。</p>
+      </div>
 <!-- ポートフォリオ紹介 -->
 
         <div class="portfolio">
           
         <h2><strong>Works</strong></h2>
         
-        <ul>
-          <li>
-             <a href="#" target="_blank">
-             §§§ メッセージボード §§§
-             <br>
-             <br>
-             <img src="./img/pot1.png" alt="メッセージボード">
-             </a>
-             <br>
-             <br>
-             メッセージのやりとりが出来る掲示板アプリ
-          </li>
-          <br>
-          <li>
-             <a href="#" target="_blank">
-             §§§ Twitterクローン §§§
-             <br>
-             <br>
-             <img src="./img/pot2.png" alt="Twitterクローン">
-             </a>
-             <br>
-             <br>
-             Twitterと同じ機能を持たせたクローンサイト
-          </li>
-          <br>
-          <li>
-             <a href="#" target="_blank">
-             §§§ モノリスト §§§
-             <br>
-             <br>
-             <img src="./img/pot3.png" alt="モノリスト">
-             </a>
-             <br>
-             <br>
-             楽天APIを活用したアイテムシェアサービス
-          </li>
-          <br>
-        　<li>
-             <a href="#" target="_blank">
-             §§§ オリジナルサービス §§§
-             <br>
-             <br>
-             <img src="./img/pot4.png" alt="オリジナルサービス">
-             </a>
-             <br>
-             <br>
-             オリジナルWebサービス
-          </li>
-        </ul>
+        <div class="row" id="caption">
+          <section class="col-sm-6">
+             <h3><a href="#" target="_blank">§§ メッセージボード §§</a></h3>
+             <figure>
+               <img src="./img/pot1.png" alt="メッセージボード">
+               <figcaption>メッセージのやりとりが出来る掲示板アプリ</figcaption>
+             </figure>
+          </section>
+          <section class="col-sm-6">
+             <h3><a href="#" target="_blank">§§ Twitterクローン §§</a></h3>
+             <figure>
+               <img src="./img/pot2.png" alt="Twitterクローン">
+               <figcaption>Twitterと同じ機能を持たせたクローンサイト</figcaption>
+             </figure>
+          </section>
+          <section class="col-sm-6">
+             <h3><a href="#" target="_blank">§§ モノリスト §§</a></h3>
+             <figure>
+               <img src="./img/pot3.png" alt="モノリスト">
+               <figcaption>楽天APIを活用したアイテムシェアサービス</figcaption>
+             </figure>
+          </section>
+          <section class="col-sm-6">
+             <h3><a href="#" target="_blank">§§ オリジナルサービス §§</a></h3>
+             <figure>
+               <img src="./img/pot4.png" alt="オリジナルサービス">
+               <figcaption>オリジナルWebサービス</figcaption>
+             </figure>
+          </section>
+        </div>
         
          <div class=git>
-           <h3>👇　GitHubページはこちら　👇</h3>
+           <h2>👇　GitHubページはこちら　👇</h2>
            <a href="https://github.com/sherry0905" target="_blank">
            <img src="./img/GitHub-Logo.png" alt="GitHubロゴ">
            <img src="./img/Octocat.png" alt="Octocatロゴ">
@@ -124,7 +106,7 @@
         </ul>
       </section>
       <footer>
-        <p><strong>&copy; 2016 Katsumi.</strong></p>
+        <p><small>&copy; 2016 Katsumi.</small></p>
       </footer>
     </div>
   </body>
